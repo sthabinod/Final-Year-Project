@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!--
+
+    <div class="heading-image">
+        <center><img height="300px" width="50%" src="../images/events.jpg" alt="">
+        </center>
+    </div>
+-->
+
+    <div class="cont-event">
+        {% for event in events %}
+        <div class="cont-event__card">
+            <img height="300" width="600" src="{{event.featured_image.url}}" alt="{{featured_image}}">
+            <a href="{% url 'event_details' event.id %}">
+                {{event.title}}
+            </a>
+            <h4>Start Date: {{ event.start_date }}</h4>
+            <h4 style="margin-top: 20px;">End Date: {{ event.end_date }}</h4>
+            <h5 style="margin-top: 20px;">Venue: {{event.venue}}</h5>
+                <p> <span>Description: </span> {{ event.description }}</p>
+            </h5>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

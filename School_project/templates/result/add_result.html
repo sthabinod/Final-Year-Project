@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+    <div class="cont-result-add">
+        <div class="cont-result-add__card-one center">
+            <label for="Exam" class="cont-result-add__result-exam">Choose Subject</label>
+                <select name="classes" class="cont-result-add__combo" id="cars">
+                    <option value="volvo">Maths </option>
+                    <option value="saab">Nepali</option>
+                    <option value="mercedes">English</option>
+                    <option value="audi">Health</option>
+                    <option value="audi">Education</option>
+                </select>
+        </div>
+
+        <div class="cont-result-add__card-two">
+            <table class="center content-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Marks Obtained</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td> <label for=" " class="cont-addresult__label ">Binod Shrestha</label></td>
+                        <td> <input type="text " class="cont-addresult__input " placeholder=" "></td>
+                    </tr>
+                    <tr>
+                        <td><label for=" " class="cont-addresult__label ">Ramila Rai</label></td>
+                        <td> <input type="text " class="cont-addresult__input " placeholder=""></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for=" " class="cont-addresult__label ">Munan Rai</label></td>
+                        <td> <input type="text " class="cont-addresult__input " placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for=" " class="cont-addresult__label ">Hari Kumar</label></td>
+                        <td> <input type="text " class="cont-addresult__input " placeholder=" "></td>
+                    </tr>
+                    <tr>
+                        <td><label for=" " class="cont-addresult__label ">Kalpana Tamang</label></td>
+                        <td> <input type="text " class="cont-addresult__input " placeholder=" "></td>
+                    </tr>
+                    <tr>
+                        <td><label for=" " class="cont-addresult__label ">Raman lingden</label></td>
+                        <td> <input type="text " class="cont-addresult__input " placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for=" " class="cont-addresult__label ">Pujan Limbu</label></td>
+                        <td> <input type="text " class="cont-addresult__input " placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for=" " class="cont-addresult__label ">Sharada Shrestha</label></td>
+                        <td> <input type="text " class="cont-addresult__input " placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for=" " class="cont-addresult__label ">Beenita Shrestha</label></td>
+                        <td> <input type="text " class="cont-addresult__input " placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for=" " class="cont-addresult__label ">Bikas Shrestha</label></td>
+                        <td> <input type="text" class="cont-addresult__input " placeholder=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cont-result-add__add-btn ">
+            <a class="btn-add " style="float: right;margin-right:340px; " href="../pages/teacher-dashboard.html ">Add result</a>
+        </div>
+    </div>
+
+{% endblock %}

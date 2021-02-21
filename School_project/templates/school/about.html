@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block content %}
+<!--External Files-->
+{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/about.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+
+
+
+<div class="row">
+
+  <!-- Grid column -->
+  <div class="col-md-12 d-flex justify-content-center mb-5">
+
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Sports</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Activities</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="3">Science</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="4">Technology</button>
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+<!-- Grid row -->
+<div class="gallery" id="gallery">
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+
+  <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"> <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Card image cap"></a>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+ <div class="mb-3 pics animation all 3">
+    <img class="img-fluid" src="{% static 'Images/e-03.png' %}" alt="Card image cap1">
+  </div>
+   <div class="mb-3 pics animation all 3">
+    <img class="img-fluid" src="{% static 'Images/e-04.jpg' %}" alt="Card image cap2">
+  </div>
+   <div class="mb-3 pics animation all 3">
+    <img class="img-fluid" src="{% static 'Images/e-02.jpg' %}" alt="Card image cap3">
+  </div>
+   <div class="mb-3 pics animation all 3">
+    <img class="img-fluid" src="{% static 'Images/e-01.jpg' %}" alt="Card image cap4">
+  </div>
+   <div class="mb-3 pics animation all 3">
+    <img class="img-fluid" src="{% static 'Images/e-02.jpg' %}" alt="Card image cap5">
+  </div>
+
+</div>
+<!-- Grid row -->
+
+{% endblock %}

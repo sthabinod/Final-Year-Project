@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+    <form class="contain-view" action="" method="">
+        <div class="contain-view__image-box">
+            <img src="../images/background.jpg" class="contain-view__image" alt="">
+        </div>
+        <div class="contain-view__input">
+            <input type="text" class="contain-view__input--symbol" placeholder="Enter your symbol number!">
+            <a href="{% url 'display_result' %}" class="contain-view__input--view-result">Display Now!</a>
+        </div>
+    </form>
+
+    <footer>
+        <div class="container-fluid-padding content">
+            <small>@copyright</small>
+        </div>
+    </footer>
+{% endblock %}
